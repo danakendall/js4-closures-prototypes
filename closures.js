@@ -52,7 +52,8 @@ function outer() {
   */
 
     //Code Here
-
+    var callJake = callFriend('Jake');
+    callJake('435-555-9248');
 
 
 
@@ -71,12 +72,13 @@ function outer() {
 
   //Code Here
 
+
   //Uncomment this once you make your function
-  //   var count = makeCounter();
-  //   count(); // 1
-  //   count(); // 2
-  //   count(); // 3
-  //   count(); // 4
+    // var count = makeCounter();
+    // count(); // 1
+    // count(); // 2
+    // count(); // 3
+    // count(); // 4
 
 
 
