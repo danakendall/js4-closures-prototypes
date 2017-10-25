@@ -71,14 +71,22 @@ function outer() {
   properly. */
 
   //Code Here
-
+  function makeCounter() {
+    return ()=> {
+      if (!num) {
+        var num = 0;
+      }
+      num +=1;
+      return num;
+    };
+  }
 
   //Uncomment this once you make your function
-    // var count = makeCounter();
-    // count(); // 1
-    // count(); // 2
-    // count(); // 3
-    // count(); // 4
+    var count = makeCounter();
+    count(); // 1
+    count(); // 2
+    count(); // 3
+    count(); // 4
 
 
 
