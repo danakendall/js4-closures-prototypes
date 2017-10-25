@@ -157,11 +157,11 @@ function outer() {
 
     var welcomeText = 'You\'re doing awesome, keep it up ';
 
-    // code message function here.
+    function message(){
+      return welcomeText + firstname + ' ' + lastname + '.';
+    }
 
-
-    //Uncommment this to return the value of your message function
-    //return message;
+    return message;
 
   }
 
