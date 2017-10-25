@@ -199,11 +199,11 @@ function outer() {
     // Anything that is being returned is made public and can be invoked from
     // outside our lexical scope
     return {
-      // Code here.
+      publicMethod: ()=>{privateMethod()}
     };
 
   })();
-
+module.publicMethod();
 
 
   /******************************************************************************\
