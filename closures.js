@@ -71,13 +71,10 @@ function outer() {
   properly. */
 
   //Code Here
+  var num = 0;
   function makeCounter() {
     return ()=> {
-      if (!num) {
-        var num = 0;
-      }
-      num +=1;
-      return num;
+      num++;
     };
   }
 
