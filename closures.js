@@ -75,6 +75,7 @@ function outer() {
   function makeCounter() {
     return ()=> {
       num++;
+      return num;
     };
   }
 
