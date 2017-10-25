@@ -112,11 +112,16 @@ function outer() {
   */
 
   function counterFactory(value) {
-
-    // Code here.
-
-
     return {
+      inc: () => {
+        value++;
+        return value;
+      },
+
+      dec: () => {
+        value --;
+        return value;
+      }
 
     }
   }
