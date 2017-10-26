@@ -256,9 +256,12 @@ module.publicMethod();
    */
 
   function timeOutCounter() {
+
     for (var i = 0; i <= 5; i++) {
       setTimeout(function() {
+        return function(x) {
           console.log(i)
+        }
       }, i * 1000)
     }
   }
